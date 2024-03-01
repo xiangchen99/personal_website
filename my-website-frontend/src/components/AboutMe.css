@@ -1,0 +1,18 @@
+.about-section {
+    padding: 50px 20px; 
+    text-align: center; /* Or left, if you prefer */
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+  }
+  
+  .about-content {
+    display: flex; /* To align image and text nicely */
+    justify-content: center; /* Or adjust as needed */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
