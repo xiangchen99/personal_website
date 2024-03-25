@@ -4,8 +4,8 @@ import "./Projects.css"; // Your CSS file
 
 const projectData = [
   {
-    title: "Placeholder Project 1",
-    description: "A short description of your awesome project.",
+    title: "RoboDog",
+    description: "A machine learning model that reacts to user gestures and commands. 2000 Datasets were",
     imageUrl: "placeholder-image.jpg",
     projectUrl: "https://www.yourproject.com",
   },
