@@ -1,8 +1,7 @@
 .navbar {
     background-color: #343a40; /* Dark background */
     color: #fff;              /* White text */
-    padding: 15px 20px;       /* Some padding */
-    display: flex;            /* Arrange links horizontally */
+    padding: 15px 20px;       /* Some padding */     
     justify-content: space-between; /* Space between elements */
     align-items: center;      /* Vertically center items */
   }
@@ -11,6 +10,8 @@
     list-style: none;         /* Remove default markers */
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   
   .navbar-item {
