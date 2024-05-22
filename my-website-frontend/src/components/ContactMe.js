@@ -3,7 +3,7 @@ import "./ContactMe.css";
 
 function ContactMe() {
   return (
-    
+    <h1>Email: </h1>
   );
 }
 
