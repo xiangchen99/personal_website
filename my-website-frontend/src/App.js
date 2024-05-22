@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-  
+
   return (
     <div className="App">
       <div>

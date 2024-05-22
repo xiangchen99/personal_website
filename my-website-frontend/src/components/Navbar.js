@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './Navbar.css'; // Add your CSS file if you have one
 import bannerImage from '../images/japanBanner.jpg'; // Import the image
-
 
 function Navbar() {
   useEffect(() => {
@@ -25,7 +24,16 @@ function Navbar() {
         }
       });
     };
-  }, []);
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array means this effect runs only once after the initial render
+
   return (
     <div>
       <nav className="navbar">
@@ -44,7 +52,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <img className = "bannerImage" src={bannerImage} alt="Banner" />
+      <img className="bannerImage" src={bannerImage} alt="Banner" />
     </div>
   );
 }
