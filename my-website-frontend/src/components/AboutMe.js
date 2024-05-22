@@ -1,15 +1,15 @@
 import React from "react";
 import "./AboutMe.css"; // Your CSS file
+import PFP from "../images/xiangPFP.jpeg"; // Import the image
 
 function AboutMe() {
   return (
     <section id="about" className="about-section">
-      <h2>About Me</h2>
+      <h1>About Me</h1>
       <div className="about-content">
-        <img
-          src={process.env.PUBLIC_URL + "/logo192.png"}
+        <img className="profile-pic"
+          src={PFP}
           alt="Your Profile"
-          className="profile-pic"
         />
         <p>
           Hello my name is Xiang! I am a software developer with a passion for machine learning and big data, and I am currently looking for an internship in software engineering.

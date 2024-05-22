@@ -27,7 +27,7 @@ function Projects() {
   return (
     <section id="projects" className="projects-section">
       <h2>Featured Projects</h2>
-      <div className="projects-grid">
+      <div className="projects-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         {projectData.map((project) => (
           <ProjectCard
             key={project.title}

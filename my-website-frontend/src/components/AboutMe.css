@@ -4,9 +4,11 @@
 }
 
 .profile-pic {
-  width: 150px; /* Maintain square aspect */
-  height: 150px;
-  border-radius: 50%; /* Circular image */
+  width: 300%;
+  height: 200%;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 .about-content {
@@ -19,6 +21,7 @@
 
 /* Additional styling for the text next to the profile picture to ensure it aligns properly */
 .about-text {
-  flex-grow: 1; /* Allows the text container to take up the remaining space */
-  padding: 0 20px; /* Optional: Adds padding around the text for better spacing */
+  flex-grow: 1;
+  height: 200%; /* Make the text container the same height as the profile picture */
+  padding: 0 20px; /* Adds padding around the text for better spacing */
 }

@@ -1,28 +1,44 @@
 .navbar {
-    background-color: #343a40; /* Dark background */
-    color: #fff;              /* White text */
-    padding: 15px 20px;       /* Some padding */
-    display: flex;            /* Arrange links horizontally */
-    justify-content: space-between; /* Space between elements */
-    align-items: center;      /* Vertically center items */
-  }
-  
-  .navbar-list {
-    list-style: none;         /* Remove default markers */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-item {
-    margin: 0 10px;           /* Spacing between links */
-  }
-  
-  .navbar-item a {
-    color: #fff;              /* White links */
-    text-decoration: none;    /* Remove underline */
-  }
-  
-  .navbar-item a:hover {
-    color: #ddd;              /* Slightly lighter on hover */
-  }
-  
+  background-color: #343a40; /* Dark background */
+  color: #fff;              /* White text */
+  padding: 15px 20px;       /* Some padding */
+  display: flex;            /* Arrange links horizontally */
+  justify-content: space-between; /* Space between elements */
+  align-items: center;      /* Vertically center items */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-list {
+  list-style: none;         /* Remove default markers */
+  margin: auto;
+  padding: 0;
+  display: flex;            /* Arrange list items horizontally */
+  justify-content: center;
+}
+
+.navbar-item {
+  margin: 0 30px;           /* Spacing between links */
+}
+
+.navbar-item a {
+  color: #fff;              /* White links */
+  text-decoration: none;    /* Remove underline */
+  font-size: 1.2em;         /* Larger text */
+  text-align: center;       /* Center text */
+}
+
+.navbar-item a:hover {
+  color: #ddd;              /* Slightly lighter on hover */
+}
+
+.bannerImage {
+  width: 100%; /* Make the image extend the full width of the website */
+  height: 200px; /* Set a fixed height for the banner */
+  object-fit: cover; /* Resize the image to cover the banner area, cropping it if necessary */
+}
+
+.navbar-item.active {
+  color: red;
+}
