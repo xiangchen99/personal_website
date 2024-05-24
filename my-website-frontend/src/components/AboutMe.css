@@ -4,8 +4,6 @@
 }
 
 .profile-pic {
-  width: 300%;
-  height: 200%;
   background-size: cover; /* Resize the background image to cover the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
