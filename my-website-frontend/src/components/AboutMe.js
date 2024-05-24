@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutMe.css"; // Your CSS file
 import PFP from "../images/xiangPFP.jpeg"; // Import the image
-import { Box, Container, TableContainer, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 function AboutMe() {
   return (
