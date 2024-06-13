@@ -2,9 +2,11 @@ import React from "react";
 import "./AboutMe.css"; // Your CSS file
 import PFP from "../images/xiangPFP.jpeg"; // Import the image
 import { Box, Container, Typography } from "@mui/material";
+import { Element } from "react-scroll";
 
 function AboutMe() {
   return (
+    
     <Container id="about" className="about-section">
       <Typography variant="h2">About Me</Typography>
       <Box className="about-content" sx={{display: "flex", flexDirection: {xs: "column", md: "row"}, justifyContent: "space-between"}}>
@@ -26,6 +28,7 @@ function AboutMe() {
         </Typography>
       </Box>
     </Container>
+    
   );
 }
 

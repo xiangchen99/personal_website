@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
+import Secrets from "./components/Secret";
 import React, { useEffect } from 'react';
 
 function App() {
@@ -16,38 +17,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Navbar>
-          <Link
-            activeClass="active"
-            to="aboutMe"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            About Me
-          </Link>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Projects
-          </Link>
-          <Link
-            activeClass="active"
-            to="contactMe"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Contact Me
-          </Link>
-        </Navbar>
+        <Navbar />
         <div id="aboutMe">
           <AboutMe />
         </div>
@@ -57,6 +27,9 @@ function App() {
         <div id="contactMe">
           <ContactMe />
         </div>
+        <div id="secrets">
+          <Secrets />
+          </div>
       </div>
     </div>
   );

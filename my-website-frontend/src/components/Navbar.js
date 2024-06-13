@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Navbar.css'; // Add your CSS file if you have one
 import bannerImage from '../images/japanBanner.jpg'; // Import the image
+import {Element, Link, animateScroll as scroll, scrollSpy} from 'react-scroll';
 
 function Navbar() {
   useEffect(() => {
@@ -35,25 +36,35 @@ function Navbar() {
   }, []); // Empty dependency array means this effect runs only once after the initial render
 
   return (
+    <Element name="navbar">
     <div>
       <nav className="navbar">
         <ul className="navbar-list">
           <li className="navbar-item">
-            <a href="/">Home</a>
+            <Link to="navbar" smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/about">About</a>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/projects">Projects</a>
+            <Link to="projects" smooth={true} duration={500}>
+              Projects
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/contact">Contact</a>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
       <img className="bannerImage" src={bannerImage} alt="Banner" />
     </div>
+    </Element>
   );
 }
 

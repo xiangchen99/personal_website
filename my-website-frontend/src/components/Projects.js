@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css"; // Your CSS file
+import { Element } from "react-scroll";
 
 const projectData = [
   {
@@ -25,6 +26,7 @@ const projectData = [
 
 function Projects() {
   return (
+    <Element name="projects">
     <section id="projects" className="projects-section">
       <h2>Featured Projects</h2>
       <div className="projects-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
@@ -39,6 +41,7 @@ function Projects() {
         ))}
       </div>
     </section>
+    </Element>
   );
 }
 
