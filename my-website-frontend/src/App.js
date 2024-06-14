@@ -1,13 +1,13 @@
-import { Link} from "react-scroll";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import ContactMe from "./components/ContactMe";
-import Secrets from "./components/Secret";
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './App.css';
+import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
+import Secret from './components/Secret';
 
 function App() {
   useEffect(() => {
@@ -15,23 +15,27 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <div>
+    <Router>
+      <div className="App">
         <Navbar />
-        <div id="aboutMe">
-          <AboutMe />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="contactMe">
-          <ContactMe />
-        </div>
-        <div id="secrets">
-          <Secrets />
-          </div>
+        <Routes>
+          <Route path="/" element={
+            <div>
+              <div id="aboutMe">
+                <AboutMe />
+              </div>
+              <div id="projects">
+                <Projects />
+              </div>
+              <div id="contactMe">
+                <ContactMe />
+              </div>
+            </div>
+          } />
+          <Route path="/secrets" element={<Secret />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

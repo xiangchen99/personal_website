@@ -2,7 +2,6 @@ import React from "react";
 import "./AboutMe.css"; // Your CSS file
 import PFP from "../images/xiangPFP.jpeg"; // Import the image
 import { Box, Container, Typography } from "@mui/material";
-import { Element } from "react-scroll";
 
 function AboutMe() {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Navbar.css'; // Add your CSS file if you have one
 import bannerImage from '../images/japanBanner.jpg'; // Import the image
-import {Element, Link, animateScroll as scroll, scrollSpy} from 'react-scroll';
+import {Element, Link} from 'react-scroll';
 
 function Navbar() {
   useEffect(() => {
