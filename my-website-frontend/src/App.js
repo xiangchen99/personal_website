@@ -32,7 +32,7 @@ function App() {
               </div>
             </div>
           } />
-          <Route path="/secrets" element={<Secret />} />
+          <Route path="/secret" element={<Secret />} />
         </Routes>
       </div>
     </Router>
